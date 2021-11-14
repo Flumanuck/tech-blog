@@ -1,19 +1,19 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class User extends Model {}
+class Post extends Model {}
 
-User.init(
+Post.init(
   {
-    username: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1],
+        len: [1, 160],
       },
     },
-    password: {
-      type: DataTypes.STRING,
+    body: {
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         len: [1],
@@ -25,4 +25,4 @@ User.init(
   }
 );
 
-module.exports = User;
+module.exports = Post;
