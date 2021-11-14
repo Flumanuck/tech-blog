@@ -1,1 +1,1 @@
-# model-view-controller
+# tech-blog
