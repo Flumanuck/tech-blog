@@ -1,4 +1,4 @@
-# Tech Blogtechno
+# Tech Blog
 
 ## Table of Contents
 
